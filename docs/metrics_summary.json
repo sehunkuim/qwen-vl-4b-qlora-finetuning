@@ -1,0 +1,62 @@
+{
+  "n_samples": 100,
+  "similarity_vs_teacher": {
+    "rouge_l": {
+      "label": "ROUGE-L F1",
+      "baseline_mean": 0.2251938575748157,
+      "sft_mean": 0.26041221286558625,
+      "delta_mean": 0.03521835529077057,
+      "sft_win_rate": 0.69,
+      "tie_rate": 0.02
+    },
+    "token_f1": {
+      "label": "Token F1",
+      "baseline_mean": 0.35745123400069756,
+      "sft_mean": 0.41273343197168244,
+      "delta_mean": 0.055282197970984714,
+      "sft_win_rate": 0.8,
+      "tie_rate": 0.02
+    },
+    "bleu1": {
+      "label": "BLEU-1",
+      "baseline_mean": 0.3990133549773762,
+      "sft_mean": 0.4619477642511572,
+      "delta_mean": 0.06293440927378095,
+      "sft_win_rate": 0.8,
+      "tie_rate": 0.01
+    },
+    "char_sim": {
+      "label": "Char similarity",
+      "baseline_mean": 0.23387388764024766,
+      "sft_mean": 0.24646979007566824,
+      "delta_mean": 0.012595902435420503,
+      "sft_win_rate": 0.64,
+      "tie_rate": 0.0
+    }
+  },
+  "format_compliance": {
+    "forbidden_prefix_rate": {
+      "baseline": 0.0,
+      "sft": 0.0
+    },
+    "exact_two_sentences_rate": {
+      "baseline": 0.0,
+      "sft": 0.0
+    },
+    "cjk_char_ratio_mean": {
+      "baseline": 0.001905501004509932,
+      "sft": 0.002124633847746814
+    },
+    "mean_word_count": {
+      "baseline": 83.04,
+      "sft": 82.88,
+      "teacher": 35.2
+    }
+  },
+  "win_rates_vs_teacher": {},
+  "training": {
+    "best_eval_loss": 1.0070322751998901,
+    "best_step": 88,
+    "epochs": 2
+  }
+}
